@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:indeterminate="true"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:id="@+id/listView" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="136dp"
+        android:layout_height="31dp"
+        android:text="conf"
+        android:id="@+id/conf"
+        android:onClick="configuration" />
+
+    <Button
+        android:layout_width="157dp"
+        android:layout_height="36dp"
+        android:text="P. Nuevo"
+        android:id="@+id/nuevo"
+        android:layout_gravity="center_horizontal"
+        android:onClick="newMatch" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="156dp"
+        android:layout_height="33dp"
+        android:text="No Voy"
+        android:id="@+id/no_voy"
+        android:onClick="rechazar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voy"
+        android:id="@+id/button"
+        android:nestedScrollingEnabled="true"
+        android:onClick="enviar" />
+
+</LinearLayout>
